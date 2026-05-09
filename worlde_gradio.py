@@ -236,9 +236,9 @@ def submit_guess(guess, game_state):
 
  
 
-    # Your original code used while count < 7,
+    
 
-    # which gives the player 7 attempts.
+    # gives the player 6 attempts.
 
     elif game_state["count"] >= 6:
 
