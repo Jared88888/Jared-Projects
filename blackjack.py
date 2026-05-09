@@ -354,7 +354,7 @@ while True:
         #tests
         for i in money:
             print(f"{i}, has {money[i]}. ")
-
+        
         print(hands)
         print(total_value)
         print(bets)

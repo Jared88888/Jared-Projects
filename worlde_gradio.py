@@ -240,7 +240,7 @@ def submit_guess(guess, game_state):
 
     # which gives the player 7 attempts.
 
-    elif game_state["count"] >= 7:
+    elif game_state["count"] >= 6:
 
         game_state["game_over"] = True
 
@@ -250,7 +250,7 @@ def submit_guess(guess, game_state):
 
     else:
 
-        attempts_left = 7 - game_state["count"]
+        attempts_left = 6 - game_state["count"]
 
         message = f"Guess submitted. You have {attempts_left} guesses left."
 
@@ -369,7 +369,8 @@ demo.launch(
 
     server_name="0.0.0.0",
 
-    server_port=7860
+    server_port=7860,
 
+    share=True
 )
 # ============================================================
